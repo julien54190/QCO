@@ -1,0 +1,101 @@
+.contact-section {
+    padding: 110px 24px 120px;
+    background: linear-gradient(180deg, rgba(232, 107, 42, 0.06) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 1) 100%);
+}
+
+.contact-inner {
+    width: 100%;
+}
+
+.contact-eyebrow {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.contact-title {
+    margin: 0 0 24px;
+    font-size: clamp(2.2rem, 2.8vw + 1rem, 3.2rem);
+    line-height: 1.15;
+    color: var(--text-color);
+}
+
+
+
+.contact-card--primary {
+    border: none;
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: 0 18px 40px rgba(232, 107, 42, 0.28);
+}
+
+.contact-profile {
+    gap: 18px;
+}
+
+.contact-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 2px solid rgba(232, 107, 42, 0.2);
+}
+
+.contact-name {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+}
+
+.contact-role {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.contact-details {
+    display: grid;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.contact-details a {
+    color: inherit;
+    padding: 0;
+}
+
+.contact-details a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.contact-card--primary .contact-details,
+.contact-card--primary .contact-details a {
+    color: var(--white);
+}
+
+.contact-card--primary .contact-details a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.contact-label {
+    font-weight: 600;
+}
+
+.contact-address {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 920px) {
+    .contact-section {
+        padding: 80px 20px 100px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

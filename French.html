@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Qco Groupe | Accounting & Tax | Member of Wingglobally</title>
+    <meta name="description"
+        content="Qco Groupe, member of Wingglobally : services comptables, fiscaux et accompagnement pour entreprises et particuliers.">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./styles/assets/img/logo/LOGO_QCo._ORANGE.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Skip link (accessibilité clavier) -->
+        <a class="skip-link sr-only-focusable" href="#header">Aller au contenu principal</a>
+
+        <nav class="site-nav fixed flex align-items-center justify-content-between p-12"
+            aria-label="Navigation principale">
+            <a href="#" aria-label="Accueil - Qco Groupe">
+                <img class="logo" src="./styles/assets/img/logo/QCO_groupe.png"
+                    alt="Qco Groupe — Member of Wingglobally">
+            </a>
+
+            <!-- Menu mobile : checkbox + label (on garde ton système) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Ouvrir ou fermer le menu">
+
+            <label for="nav-toggle" class="nav-burger align-items-center justify-content-center"
+                aria-controls="nav-menu" aria-expanded="false" role="button" tabindex="0">
+                <i class="bx bx-menu" aria-hidden="true"></i>
+                <i class="bx bx-x" aria-hidden="true"></i>
+                <span class="sr-only">Ouvrir le menu</span>
+            </label>
+
+            <div class="nav-links flex flex-col gap-12" id="nav-menu">
+                <a href="#" aria-current="page">Accueil</a>
+                <a href="#about">A propos de nous</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+                <div class="lang-switcher relative">
+                    <input type="checkbox" id="lang-toggle" class="lang-toggle sr-only" aria-label="Changer la langue">
+
+                    <label for="lang-toggle" class="lang-label" aria-controls="lang-menu" aria-expanded="false"
+                        role="button" tabindex="0">
+                        <!-- Le drapeau est décoratif ici (le texte sr-only donne la langue) -->
+                        <img class="lang-flag-img" src="./styles/assets/img/flag/francais.jpeg" alt=""
+                            aria-hidden="true">
+                        <span class="sr-only">Langue actuelle : Français</span>
+                    </label>
+
+                    <div class="lang-menu" id="lang-menu" role="menu" aria-label="Sélection de la langue">
+                        <a class="lang-option" href="French.html" role="menuitem" lang="fr" aria-current="true">
+                            <img class="lang-flag-img" src="./styles/assets/img/flag/francais.jpeg" alt=""
+                                aria-hidden="true">
+                        </a>
+                        <a class="lang-option" href="English.html" role="menuitem" lang="en">
+                            <img class="lang-flag-img" src="./styles/assets/img/flag/English.jpeg" alt=""
+                                aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero relative" aria-labelledby="hero-title">
+            <div class="hero-content relative">
+                <p class="hero-eyebrow">Qco Groupe</p>
+                <h1 id="hero-title" class="hero-title">Comptabilité & fiscalité pour avancer en toute confiance</h1>
+                <p class="hero-text">Un accompagnement clair et rigoureux, pensé pour les entreprises et les particuliers.
+                </p>
+                <div class="mt-30 flex align-items-center gap-12">
+                    <a class="btn btn-primary hero-cta" href="#services">Découvrir nos services</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main" tabindex="-1">
+        <section id="about" class="about-section relative" aria-labelledby="about-title">
+            <div class="about-grid container relative">
+                <div class="about-content">
+                    <p class="about-eyebrow">A propos de nous</p>
+                    <h2 id="about-title" class="about-title">Expérience, expertise et soutien international</h2>
+                    <p class="about-text">Fondée en 2014, Qco Groupe est le fruit de plus de 30 ans d’expérience. Nous proposons des services de comptabilité, fiscalité, services juridiques et secrétariat social pour les PME et les particuliers.</p>
+                    <p class="about-text">Notre équipe à taille humaine assure un suivi personnalisé, rapide et clair, adapté au fonctionnement et aux besoins spécifiques de chaque entreprise.</p>
+
+                    <h3 class="about-subtitle">Également pour les entreprises internationales</h3>
+                    <p class="about-text">Membre actif de Wingglobally, Qco Groupe s’appuie sur un réseau mondial d’experts-comptables, d’auditeurs et de fiscalistes.</p>
+                    <p class="about-text">Nous accompagnons les entreprises étrangères dans leurs démarches administratives et juridiques en Belgique, de la gestion du personnel à la TVA.</p>
+
+                    <div class="flex align-items-center gap-12 mt-30 justify-content-between">
+                        <a class="btn btn-primary" href="#contact">Prenez contact avec nous</a>
+                        <a class="btn btn-secondary" href="international.html">International</a>
+                    </div>
+                </div>
+
+                <div class="about-media flex justify-content-center">
+                    <div class="about-image-wrap relative">
+                        <img class="about-image" src="./styles/assets/img/photo/q_co_nsulting.jpeg"
+                            alt="Équipe de Qco Groupe en réunion">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section" aria-labelledby="services-title">
+            <div class="services-inner container">
+                <p class="services-eyebrow">Services</p>
+                <h2 id="services-title" class="services-title">Nos services</h2>
+                <p class="services-lead">Nous accompagnons les entreprises et les particuliers avec des solutions claires et efficaces, adaptées à leurs besoins.</p>
+
+                <div class="services-grid grid-2">
+                    <article class="service-card card">
+                        <h3 class="service-subtitle">Cabinet comptable</h3>
+                        <p class="service-intro">Vous souhaitez confier la comptabilité de votre entreprise ? Qco prend en charge les tâches comptables :</p>
+                        <ul class="service-list">
+                            <li class="service-item">
+                                <span class="service-dot" aria-hidden="true">&rsaquo;</span>
+                                <div>
+                                    <strong>Tenue de la comptabilité :</strong>
+                                    <ul class="service-sublist">
+                                        <li>Comptabiliser vos documents suivant un plan comptable</li>
+                                        <li>Établir une situation mensuelle ou trimestrielle</li>
+                                        <li>Préparation des comptes annuels</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Établir un bilan provisoire</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Déclaration TVA périodique et annuelle</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Déclaration d’impôts</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Établissement des déclarations intra-communautaires</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Déclaration Instratat pour la STATEC</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Déposer le bilan au Registre de Commerce et de Sociétés (LBR / eCDF)</span></li>
+                        </ul>
+                        <p class="service-note">Pour les Sociétés Anonymes, nous proposons également la mission de commissaire aux comptes.</p>
+                    </article>
+
+                    <article class="service-card card">
+                        <h3 class="service-subtitle">Conseil fiscal</h3>
+                        <p class="service-intro">Nous aidons notre clientèle pour comprendre et optimiser leur situation fiscale.</p>
+                        <ul class="service-list">
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Analyse de la situation fiscale des entreprises et des particuliers</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Investissement immobilier</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Due diligence (contrôle préalable)</span></li>
+                            <li class="service-item">
+                                <span class="service-dot" aria-hidden="true">&rsaquo;</span>
+                                <div>
+                                    <strong>Conseils aux personnes physiques :</strong>
+                                    <ul class="service-sublist">
+                                        <li>Acquisition ou vente d’un immeuble</li>
+                                        <li>Création de Société Civile Immobilière</li>
+                                        <li>Changement de la situation familiale</li>
+                                        <li>Déclarations fiscales</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card card">
+                        <h3 class="service-subtitle">Création de société</h3>
+                        <p class="service-intro">Vous avez un projet mais rencontrez des difficultés pour le réaliser ? Nous vous assistons dans toutes vos démarches.</p>
+                        <ul class="service-list">
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Création de business plan</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Mise en relation avec le notaire pour la rédaction des statuts</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Demande d’autorisation d’établissement</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Immatriculation TVA</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Inscription et mise à jour du Registre des Bénéficiaires Effectifs (RBE)</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Mise à jour et publication diverses auprès du Registre de Commerce et de Sociétés (LBR)</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card card">
+                        <h3 class="service-subtitle">Gestion des salaires et des ressources humaines</h3>
+                        <ul class="service-list">
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Calcul de salaires</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Liaison avec les administrations en matière de sécurité sociale (CCSS, CNS), de fiscalité et d’emploi (ADEM)</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Rédaction de contrats et d’accords</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Aide au licenciement</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card card">
+                        <h3 class="service-subtitle">Aide étatique, emploi, recrutement et formation</h3>
+                        <ul class="service-list">
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Démarches administratives auprès des administrations luxembourgeoises</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Demande auprès de l’ADEM</span></li>
+                            <li class="service-item"><span class="service-dot" aria-hidden="true">&rsaquo;</span><span>Recouvrement de créances</span></li>
+                        </ul>
+                        <p class="service-note">Liste non exhaustive.</p>
+                    </article>
+                </div>
+
+                <a class="btn btn-primary services-cta" href="#contact">Prenez contact avec nous</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="contact-inner container">
+                <p class="contact-eyebrow">Contact</p>
+                <h2 id="contact-title" class="contact-title">Prenez contact avec nous</h2>
+
+                <div class="contact-grid grid-2">
+                    <article class="contact-card card">
+
+                        <div class="contact-details">
+                            <div>
+                                <span class="contact-label">Emails :</span>
+                                <div><a href="mailto:contact@qco.lu">contact@qco.lu</a></div>
+                                <div><a href="mailto:m.lucadello@qco.lu">m.lucadello@qco.lu</a></div>
+                            </div>
+                            <div>
+                                <span class="contact-label">Tel :</span>
+                                <a href="tel:+35226296955">(+352) 26 29 69 55</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="contact-card card contact-card--primary">
+                        <h3 class="contact-name">QCo Groupe S.à r.l.</h3>
+                        <div class="contact-details">
+                            <p class="contact-address">175, route d'Arlon<br>L-8009 Strassen</p>
+                            <div>
+                                <span class="contact-label">Email :</span>
+                                <a href="mailto:contact@qco.lu">contact@qco.lu</a>
+                            </div>
+                            <div>
+                                <span class="contact-label">Tel :</span>
+                                <a href="tel:+35226296955">(+352) 26 29 69 55</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid container grid-4">
+            <div class="footer-brand">
+                <img class="footer-logo" src="./styles/assets/img/logo/QCO_groupe.png"
+                    alt="Qco Groupe — Member of Wingglobally">
+            </div>
+
+            <div>
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="footer-list">
+                    <li><a class="footer-link" href="#">Accueil</a></li>
+                    <li><a class="footer-link" href="#services">Services</a></li>
+                    <li><a class="footer-link" href="#about">A propos de nous</a></li>
+                    <li><a class="footer-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Juridique</h3>
+                <ul class="footer-list">
+                    <li><a class="footer-link" href="privacy.html">Politique de confidentialite</a></li>
+                    <li><a class="footer-link" href="cookies.html">Cookie</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-list">
+                    <li><a class="footer-contact" href="tel:+35226296955">T. (+352) 26 29 69 55</a></li>
+                    <li><a class="footer-contact" href="mailto:contact@qco.lu">contact@qco.lu</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies">
+        <div class="cookie-card container">
+            <div class="cookie-text">
+                <p class="cookie-title">Cookies</p>
+                <p class="cookie-desc">
+                    Nous utilisons des cookies strictement necessaires au fonctionnement du site.
+                    <a class="cookie-link" href="cookies.html">En savoir plus</a>
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-outline-primary" data-cookie-action="settings">Parametrer</button>
+                <button class="btn btn-outline-primary" data-cookie-action="reject">Refuser</button>
+                <button class="btn btn-primary" data-cookie-action="accept">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-panel" id="cookie-panel" aria-hidden="true" hidden>
+        <div class="cookie-panel-backdrop" data-cookie-close></div>
+        <div class="cookie-panel-card" role="dialog" aria-modal="true" aria-labelledby="cookie-panel-title">
+            <h2 id="cookie-panel-title" class="cookie-panel-title">Parametrer les cookies</h2>
+            <p class="cookie-panel-text">Choisissez les cookies que vous souhaitez activer.</p>
+            <div class="cookie-options">
+                <label class="cookie-option">
+                    <input type="checkbox" checked disabled>
+                    <span>Cookies necessaires</span>
+                </label>
+                <label class="cookie-option">
+                    <input type="checkbox" id="cookie-analytics">
+                    <span>Cookies statistiques</span>
+                </label>
+            </div>
+            <div class="cookie-panel-actions">
+                <button class="btn btn-outline-primary" data-cookie-close>Annuler</button>
+                <button class="btn btn-primary" data-cookie-save>Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/header.js"></script>
+    <script src="./script/cookies.js"></script>
+</body>
+
+</html>

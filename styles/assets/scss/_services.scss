@@ -1,0 +1,132 @@
+.services-section {
+    padding: 110px 24px 120px;
+    background: var(--white);
+}
+
+.services-inner {
+    width: 100%;
+}
+
+.services-eyebrow {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.services-title .service-subtitle {
+    margin: 0 0 12px;
+    font-size: clamp(2.2rem, 2.8vw + 1rem, 3.2rem);
+    line-height: 1.15;
+    color: var(--text-color);
+}
+
+.service-subtitle {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.services-lead {
+    margin: 0;
+    max-width: 720px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.services-grid {
+    margin-top: 40px;
+}
+
+.service-card {
+    padding-bottom: 24px;
+}
+
+.service-title {
+    margin: 0 0 8px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.service-intro {
+    margin: 0 0 16px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.service-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.service-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: var(--text-color);
+    line-height: 1.55;
+}
+
+.service-dot {
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 16px rgba(232, 107, 42, 0.25);
+}
+
+.service-item strong {
+    display: block;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+
+.service-sublist {
+    margin: 0;
+    padding-left: 18px;
+    list-style: disc;
+    color: var(--text-muted);
+}
+
+.service-sublist li {
+    margin-top: 6px;
+}
+
+.service-note {
+    margin-top: 16px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.services-cta {
+    margin-top: 28px;
+}
+
+@media screen and (max-width: 920px) {
+    .services-section {
+        padding: 80px 20px 96px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .service-card {
+        padding: 24px 22px;
+    }
+}

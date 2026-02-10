@@ -1,0 +1,114 @@
+.about-section {
+    padding: 100px 24px;
+    background: linear-gradient(120deg, rgba(244, 160, 122, 0.12) 0%, rgba(143, 180, 227, 0.12) 100%);
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.7), transparent 55%);
+    pointer-events: none;
+}
+
+.about-grid {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 640px;
+}
+
+.about-eyebrow {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.about-title {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 2.6vw + 1rem, 3.1rem);
+    line-height: 1.15;
+    color: var(--text-color);
+}
+
+.about-text {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.about-subtitle {
+    margin: 18px 0 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.about-image-wrap {
+    width: min(460px, 90vw);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(31, 41, 51, 0.18);
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-badge {
+    position: absolute;
+    left: 20px;
+    bottom: -22px;
+    padding: 14px 18px;
+    border-radius: 18px;
+    background: var(--secondary);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 12px 25px rgba(47, 95, 154, 0.3);
+}
+
+.about-badge span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 920px) {
+    .about-section {
+        padding: 80px 20px 100px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-media {
+        order: -1;
+    }
+
+    .about-image-wrap {
+        width: 100%;
+    }
+
+    .about-badge {
+        left: 16px;
+        bottom: -18px;
+    }
+}
