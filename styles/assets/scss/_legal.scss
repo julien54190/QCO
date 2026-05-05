@@ -8,6 +8,20 @@
     gap: 20px;
 }
 
+.international-cover {
+    display: block;
+    width: min(560px, 100%);
+    height: auto;
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+.international-logo {
+    display: block;
+    max-width: min(420px, 100%);
+    height: auto;
+}
+
 .legal-eyebrow {
     margin: 0;
     font-size: 0.85rem;
