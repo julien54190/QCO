@@ -324,6 +324,7 @@ button[disabled] {
 
 .nav-links a,
 .nav-links button {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -343,8 +344,10 @@ button[disabled] {
 .lang-flag-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   border-radius: 50%;
   transform: scale(1.15);
@@ -747,7 +750,14 @@ button[disabled] {
   color: var(--text-color);
 }
 
+.contact-grid {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-card--primary {
+  width: min(680px, 100%);
+  padding: 36px;
   border: none;
   background: var(--primary);
   color: var(--white);
@@ -762,7 +772,8 @@ button[disabled] {
   width: 88px;
   height: 88px;
   border-radius: 18px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid rgba(232, 107, 42, 0.2);
 }
 
@@ -786,6 +797,12 @@ button[disabled] {
 .contact-details a {
   color: inherit;
   padding: 0;
+}
+
+.contact-email-list {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
 }
 
 .contact-details a:hover {
@@ -816,8 +833,8 @@ button[disabled] {
   .contact-section {
     padding: 80px 20px 100px;
   }
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-card--primary {
+    padding: 30px 24px;
   }
 }
 .site-footer {
@@ -835,7 +852,8 @@ button[disabled] {
 .footer-logo {
   width: auto;
   height: 70px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-title {
@@ -885,7 +903,7 @@ button[disabled] {
 
 .international-cover {
   display: block;
-  width: min(560px, 100%);
+  width: min(380px, 100%);
   height: auto;
   margin: 0 auto;
   border-radius: 18px;
@@ -1072,6 +1090,4 @@ button[disabled] {
     width: 100%;
     justify-content: center;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

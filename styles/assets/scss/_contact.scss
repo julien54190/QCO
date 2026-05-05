@@ -23,9 +23,14 @@
     color: var(--text-color);
 }
 
-
+.contact-grid {
+    display: flex;
+    justify-content: center;
+}
 
 .contact-card--primary {
+    width: min(680px, 100%);
+    padding: 36px;
     border: none;
     background: var(--primary);
     color: var(--white);
@@ -66,6 +71,12 @@
     padding: 0;
 }
 
+.contact-email-list {
+    display: grid;
+    gap: 4px;
+    margin-top: 4px;
+}
+
 .contact-details a:hover {
     color: var(--primary);
     text-decoration: underline;
@@ -95,7 +106,7 @@
         padding: 80px 20px 100px;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .contact-card--primary {
+        padding: 30px 24px;
     }
 }
