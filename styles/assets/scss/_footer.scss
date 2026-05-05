@@ -1,5 +1,5 @@
 .site-footer {
-    padding: 80px 24px;
+    padding: 80px 24px 32px;
     border-top: var(--border);
     background: var(--white);
 }
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 920px) {
     .site-footer {
-        padding: 60px 20px;
+        padding: 60px 20px 28px;
     }
 
     .footer-logo {
